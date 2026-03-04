@@ -403,86 +403,283 @@ th,td {
     fill: white;
     transition: fill 0.3s ease;
 }
-
-/* Темная тема */
-body.dark-theme {
-    background-color: #1e1e1e;
-    color: #f0f0f0;
+/* ========== ТЕМНАЯ ТЕМА ========== */
+.dark-theme {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
 }
 
-body.dark-theme header,
-body.dark-theme footer {
+.dark-theme body {
+    background-color: #1a1a1a;
+}
+
+.dark-theme header,
+.dark-theme footer {
     background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-bottom: 1px solid #3d3d3d;
 }
 
-body.dark-theme #sideMenu {
+.dark-theme #sideMenu {
+    background-color: #2d2d2d;
+    border-right: 1px solid #3d3d3d;
+}
+
+.dark-theme #sideMenu a {
+    color: #e0e0e0;
+}
+
+.dark-theme #sideMenu a:hover {
     background-color: #3d3d3d;
 }
 
-body.dark-theme #content section {
+.dark-theme #sideMenu a.active {
+    background: #ff6b4a;
+    color: #ffffff;
+}
+
+.dark-theme #menuToggle svg {
+    fill: #e0e0e0;
+}
+
+.dark-theme .tab-btn {
+    color: #e0e0e0;
+}
+
+.dark-theme .tab-btn.active {
+    background: #333333;
+    color: #ffffff;
+}
+
+.dark-theme #content section {
     background: #2d2d2d;
+    color: #e0e0e0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border: 1px solid #3d3d3d;
 }
 
-body.dark-theme p {
-    color: #f0f0f0;
+.dark-theme h1,
+.dark-theme h2 {
+    color: #ffaa8a;
+    border-bottom-color: #ff6b4a;
 }
 
-body.dark-theme .tab-btn.active {
-    background: #4a4a4a;
-    color: white;
+.dark-theme h3,
+.dark-theme h4 {
+    color: #ffaa8a;
+    border-left-color: #ffaa8a;
 }
 
-body.dark-theme .modal-content {
+.dark-theme p {
+    color: #e0e0e0;
+}
+
+.dark-theme table {
+    border-color: #4a4a4a;
+    background: #333333;
+}
+
+.dark-theme th,
+.dark-theme td {
+    border-color: #4a4a4a;
+    color: #e0e0e0;
+}
+
+.dark-theme .code-container {
+    background: linear-gradient(145deg, #2d2d2d, #333333);
+    border-color: #4a4a4a;
+}
+
+.dark-theme .code-header {
+    background-color: #333333;
+    color: #e0e0e0;
+    border-bottom-color: #4a4a4a;
+}
+
+.dark-theme pre {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-theme code {
+    color: #ffaa8a;
+}
+
+.dark-theme .language-label {
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+}
+
+.dark-theme .question {
+    border-color: #4a4a4a;
+    background: #333333;
+}
+
+.dark-theme .answer-option {
+    color: #e0e0e0;
+}
+
+.dark-theme input[type="text"],
+.dark-theme input[type="number"],
+.dark-theme select {
+    background: #333333;
+    color: #e0e0e0;
+    border: 1px solid #4a4a4a;
+}
+
+.dark-theme input[type="text"]:focus,
+.dark-theme input[type="number"]:focus,
+.dark-theme select:focus {
+    border-color: #ff6b4a;
+    outline: none;
+}
+
+.dark-theme .modal-content {
     background: #2d2d2d;
-    color: #f0f0f0;
+    color: #e0e0e0;
+    border: 1px solid #4a4a4a;
 }
 
-body.dark-theme code {
-    color: #ffcc80;
+.dark-theme .modal-close-btn {
+    color: #e0e0e0;
 }
 
-body.dark-theme pre {
-    background-color: #2d2d2d;
-    color: #f0f0f0;
+.dark-theme .modal-btn {
+    background: #4a4a4a;
+    color: #e0e0e0;
 }
 
-body.dark-theme th,
-body.dark-theme td {
-    color: #f0f0f0;
-    border-color: #666;
-}
-.variant-selector {
-    background: rgba(139, 69, 19, 0.1); 
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    text-align: center;
-    border: 2px solid #8B4513; 
+.dark-theme .modal-btn:hover:not(.disabled) {
+    background: #ff6b4a;
+    color: #ffffff;
 }
 
-.variant-selector label {
-    font-weight: bold;
-    margin-right: 10px;
-    color: #3D2B1F; 
-    font-size: 1.1em;
+.dark-theme .timer {
+    color: #ff6b4a;
 }
 
-#variant-select {
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: 2px solid #8B4513; 
-    background: white;
-    color: #3D2B1F; 
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.dark-theme .submit-btn {
+    background: #ff6b4a;
+    color: #ffffff;
 }
 
-#variant-select:hover {
-    background: #FFF8DC; 
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.dark-theme .submit-btn:hover {
+    background: #ff8b6a;
+}
+
+.dark-theme iframe.slides {
+    border-image: linear-gradient(45deg, #4a4a4a, #666666, #ffaa8a, #ff6b4a) 1;
+}
+
+.dark-theme .variant-selector {
+    background: #333333;
+    border-color: #4a4a4a;
+}
+
+.dark-theme .variant-selector label {
+    color: #e0e0e0;
+}
+
+.dark-theme #variant-select {
+    background: #333333;
+    color: #e0e0e0;
+    border-color: #4a4a4a;
+}
+
+.dark-theme #variant-select:hover {
+    background: #3d3d3d;
+}
+
+.dark-theme .selection-info {
+    background: #2d2d2d;
+    border: 1px solid #4a4a4a;
+}
+
+.dark-theme .variant-btn {
+    background: #4a4a4a;
+    color: #e0e0e0;
+}
+
+.dark-theme .variant-btn:hover {
+    background: #ff6b4a;
+    color: #ffffff;
+}
+
+.dark-theme .assignment {
+    background: #2d2d2d;
+    border-left-color: #ff6b4a;
+    border: 1px solid #4a4a4a;
+}
+
+.dark-theme .variant-task {
+    background: #333333;
+    border-color: #4a4a4a;
+}
+
+.dark-theme .variables {
+    background: #3d3d3d;
+    border-left-color: #ffaa8a;
+}
+
+.dark-theme .variant-content {
+    background: #333333;
+}
+
+.dark-theme img {
+    filter: brightness(0.8);
+}
+
+.dark-theme .border {
+    border-color: #4a4a4a;
+}
+
+/* Стили для скроллбара в темной теме */
+.dark-theme ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.dark-theme ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+.dark-theme ::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 6px;
+}
+
+.dark-theme ::-webkit-scrollbar-thumb:hover {
+    background: #ff6b4a;
+}
+
+/* Стили для ссылок в темной теме */
+.dark-theme a {
+    color: #ffaa8a;
+}
+
+.dark-theme a:hover {
+    color: #ff6b4a;
+}
+
+/* Стили для выделения текста */
+.dark-theme ::selection {
+    background: #ff6b4a;
+    color: #ffffff;
+}
+
+/* Дополнительные стили для формул */
+.dark-theme .MathJax {
+    color: #e0e0e0 !important;
+}
+
+.dark-theme mjx-container {
+    color: #e0e0e0 !important;
+}
+
+/* Стили для встроенных виджетов */
+.dark-theme .widget-container {
+    background: #333333;
+    border-color: #4a4a4a;
 }
 
 /* Экран выбора варианта */
