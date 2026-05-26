@@ -6395,7 +6395,6 @@ function extractPracticeData() {
         }
     });
 }
-// После определения JSON_content, добавьте:
 function initializePracticeData() {
 
     if (JSON_content.topic01 && !JSON_content.topic01.practicaData) {
@@ -6473,7 +6472,7 @@ function initializePracticeData() {
                         },
                         {
                             "id": 16,
-                            "content": "<p>Дана функция \\( x = \\dfrac{a}{b + \\sqrt{c}} \\ и значение параметров с погрешностями \\( a = 13.52 \\pm 0.02 \\); \\( b = 5.1 \\pm 0.03 \\); \\( c = 9.273 \\pm 0.008 \\).</p>"
+                            "content": "<p>Дана функция \\( x = \\dfrac{a}{b + \\sqrt{c}} \\) и значение параметров с погрешностями \\( a = 13.52 \\pm 0.02 \\); \\( b = 5.1 \\pm 0.03 \\); \\( c = 9.273 \\pm 0.008 \\).</p>"
                         },
                         {
                             "id": 17,
