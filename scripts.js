@@ -459,22 +459,22 @@ end
                 "type": "multiple"
             },
 				{
-    "question": "По какой формуле вычисляется абсолютная погрешность функции $y = \\sin x$, если известна абсолютная погрешность аргумента $\\Delta_x$?",
+    "question": "По какой формуле вычисляется абсолютная погрешность функции (y = \\sin x), если известна абсолютная погрешность аргумента (\\Delta_x)?",
     "answers": [
         {
-            "text": "$\\Delta_y = |\\cos x| \\cdot \\Delta_x$",
+            "text": "(\\Delta_y = |\\cos x| \\cdot \\Delta_x)",
             "correct": true
         },
         {
-            "text": "$\\Delta_y = |\\sin x| \\cdot \\Delta_x$",
+            "text": "(\\Delta_y = |\\sin x| \\cdot \\Delta_x)",
             "correct": false
         },
         {
-            "text": "$\\Delta_y = |x| \\cdot \\Delta_x$",
+            "text": "(\\Delta_y = |x| \\cdot \\Delta_x)",
             "correct": false
         },
         {
-            "text": "$\\Delta_y = \\dfrac{\\Delta_x}{|\\cos x|}$",
+            "text": "(\\Delta_y = \\dfrac{\\Delta_x}{|\\cos x|})",
             "correct": false
         }
     ],
