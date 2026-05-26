@@ -457,7 +457,117 @@ end
                 }
                 ],
                 "type": "multiple"
-            }
+            },
+				{
+    "question": "По какой формуле вычисляется абсолютная погрешность функции $y = \\sin x$, если известна абсолютная погрешность аргумента $\\Delta_x$?",
+    "answers": [
+        {
+            "text": "$\\Delta_y = |\\cos x| \\cdot \\Delta_x$",
+            "correct": true
+        },
+        {
+            "text": "$\\Delta_y = |\\sin x| \\cdot \\Delta_x$",
+            "correct": false
+        },
+        {
+            "text": "$\\Delta_y = |x| \\cdot \\Delta_x$",
+            "correct": false
+        },
+        {
+            "text": "$\\Delta_y = \\dfrac{\\Delta_x}{|\\cos x|}$",
+            "correct": false
+        }
+    ],
+    "type": "single"
+},
+{
+    "question": "Дано: $z = \\dfrac{x}{y}$, $\\delta_x = 0{,}01$ ($1\\%$), $\\delta_y = 0{,}02$ ($2\\%$). Чему равна предельная относительная погрешность $\\delta_z$?",
+    "answers": [
+        {
+            "text": "$0{,}01\\%$",
+            "correct": false
+        },
+        {
+            "text": "$0{,}02\\%$",
+            "correct": false
+        },
+        {
+            "text": "$0{,}03\\%$",
+            "correct": true
+        },
+        {
+            "text": "$0{,}015\\%$",
+            "correct": false
+        }
+    ],
+    "type": "single"
+},
+{
+    "question": "Какие цифры в записи приближённого числа $A = 7{,}158 \\pm 0{,}009$ являются сомнительными в узком смысле?",
+    "answers": [
+        {
+            "text": "Только цифра $8$",
+            "correct": true
+        },
+        {
+            "text": "Цифры $5$ и $8$",
+            "correct": false
+        },
+        {
+            "text": "Цифры $1$, $5$ и $8$",
+            "correct": false
+        },
+        {
+            "text": "Все цифры верные",
+            "correct": false
+        }
+    ],
+    "type": "single"
+},
+{
+    "question": "Что из перечисленного верно для абсолютной погрешности суммы двух приближённых чисел?",
+    "answers": [
+        {
+            "text": "$\\Delta(x+y) = \\Delta_x + \\Delta_y$",
+            "correct": true
+        },
+        {
+            "text": "$\\Delta(x+y) = |\\Delta_x| + |\\Delta_y|$",
+            "correct": false
+        },
+        {
+            "text": "$\\Delta(x+y) = \\sqrt{\\Delta_x^2 + \\Delta_y^2}$",
+            "correct": false
+        },
+        {
+            "text": "$\\Delta(x+y) = |\\Delta_x| \\cdot |\\Delta_y|$",
+            "correct": false
+        }
+    ],
+    "type": "single"
+},
+{
+    "question": "Почему при решении инженерных задач численными методами результат всегда является приближённым?",
+    "answers": [
+        {
+            "text": "Потому что математическая модель не учитывает все факторы реального объекта",
+            "correct": false
+        },
+        {
+            "text": "Потому что на каждом этапе вычислений возникают различные погрешности (исходных данных, метода, округления)",
+            "correct": true
+        },
+        {
+            "text": "Потому что компьютеры работают с ограниченной точностью",
+            "correct": false
+        },
+        {
+            "text": "Потому что точные решения существуют только для простых задач",
+            "correct": false
+        }
+    ],
+    "type": "single"
+}
             ]
         }
     },
